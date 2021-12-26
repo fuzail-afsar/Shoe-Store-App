@@ -88,6 +88,7 @@ const ProductDetail = () => {
       }
     };
     loadDetail();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!Object.keys(productDetail).length) return <ProductDetailSkeleton />;
